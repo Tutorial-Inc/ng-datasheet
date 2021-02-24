@@ -11,12 +11,12 @@ type RowNumber = number
 type ColNumber = number
 
 @Component({
-  selector: 'ds-datasheet',
-  templateUrl: './datasheet.component.html',
-  styleUrls: ['./datasheet.component.scss']
+  selector: 'ng-datasheet',
+  templateUrl: 'ng-datasheet.component.html',
+  styleUrls: ['./ng-datasheet.component.scss']
 })
 
-export class DatasheetComponent implements OnInit {
+export class NgDatasheetComponent implements OnInit {
   @Input() data: any[][];
 
   @Output() onChangeCell: EventEmitter<OnChangeCell> = new EventEmitter<OnChangeCell>();

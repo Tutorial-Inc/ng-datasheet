@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lib-ng-datasheet';
+  title = 'ng-datasheet-library';
   csv = [
     ["Column 1", "Column 2", "Column 3", "Column 4"],
     ["1-1", "1-2", "1-3", "1-4"],

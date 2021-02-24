@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "datasheet": [
-        "dist/datasheet"
+      "ng-datasheet": [
+        "dist/ng-datasheet"
       ],
-      "datasheet/*": [
-        "dist/datasheet/*"
+      "ng-datasheet/*": [
+        "dist/ng-datasheet/*"
       ]
     }
   },

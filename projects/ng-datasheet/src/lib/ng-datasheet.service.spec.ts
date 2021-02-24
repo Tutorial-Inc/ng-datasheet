@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DatasheetService } from './datasheet.service';
+import { NgDatasheetService } from './ng-datasheet.service';
 
-describe('DatasheetService', () => {
+describe('NgDatasheetService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: DatasheetService = TestBed.get(DatasheetService);
+    const service: NgDatasheetService = TestBed.get(NgDatasheetService);
     expect(service).toBeTruthy();
   });
 });

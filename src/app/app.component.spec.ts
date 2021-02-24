@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'lib-ng-datasheet'`, () => {
+  it(`should have as title 'ng-datasheet-library'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('lib-ng-datasheet');
+    expect(app.title).toEqual('ng-datasheet-library');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('lib-ng-datasheet app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng-datasheet-library app is running!');
   });
 });

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DatasheetModule } from 'projects/datasheet/src/public-api';
+import { NgDatasheetModule } from 'projects/ng-datasheet/src/public-api';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { DatasheetModule } from 'projects/datasheet/src/public-api';
   ],
   imports: [
     BrowserModule,
-    DatasheetModule
+    NgDatasheetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
