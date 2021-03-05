@@ -25,14 +25,21 @@ export class AppComponent {
     const rowNumber = $event.rowNumber;
     const colNumber = $event.colNumber;
     const newValue = $event.newValue;
-    this.csv[rowNumber][colNumber] = newValue;
+    const row = this.csv[rowNumber];
+    this.csv[rowNumber] = row.map((el, index) => {
+      if (index === colNumber) {
+        return newValue;
+      } else {
+        return el;
+      }
+    })
   }
 
   onInsertColumn($event): void {
     console.log('onInsertColumn');
     console.log($event);
     const colNumber = $event
-    this.csv.map(row => row.splice(colNumber, null, ''));
+    this.csv.map(row => row.splice(colNumber, null, ""));
     this.csv[0] = this.generateNewHeader(this.csv[0].length);
   }
 
@@ -47,7 +54,7 @@ export class AppComponent {
     console.log('onInsertRow');
     console.log($event);
     const rowNum = $event;
-    const newRow = this.csv[0].map(el => '')
+    const newRow = this.csv[0].map(el => "")
     this.csv.splice(rowNum, null, newRow);
   }
 
