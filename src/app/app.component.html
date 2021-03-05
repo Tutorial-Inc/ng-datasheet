@@ -6,3 +6,7 @@
   (onDeleteRow)="onDeleteRow($event)"
   [data]="csv">
 </ng-datasheet>
+
+<p>
+  {{ csv | json }}
+</p>

@@ -57,18 +57,22 @@ export class NgDatasheetComponent implements OnInit {
   }
 
   onClickedInsertColumn(colNumber) {
+    this.toggleColDropDownMenu(colNumber);
     this.onInsertColumn.emit(colNumber)
   }
 
   onClickedDeleteColumn(colNumber) {
+    this.toggleColDropDownMenu(colNumber);
     this.onDeleteColumn.emit(colNumber)
   }
 
   onClickedInsertRow(rowNumber) {
+    this.toggleRowDropDownMenu(rowNumber);
     this.onInsertRow.emit(rowNumber)
   }
 
   onClickedDeleteRow(rowNumber) {
+    this.toggleRowDropDownMenu(rowNumber);
     this.onDeleteRow.emit(rowNumber)
   }
 
