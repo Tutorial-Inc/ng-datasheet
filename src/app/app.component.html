@@ -1,1 +1,8 @@
-<ng-datasheet [data]="csv"></ng-datasheet>
+<ng-datasheet
+  (onChangeCell)="onChangeCell($event)"
+  (onInsertColumn)="onInsertColumn($event)"
+  (onDeleteColumn)="onDeleteColumn($event)"
+  (onInsertRow)="onInsertRow($event)"
+  (onDeleteRow)="onDeleteRow($event)"
+  [data]="csv">
+</ng-datasheet>
