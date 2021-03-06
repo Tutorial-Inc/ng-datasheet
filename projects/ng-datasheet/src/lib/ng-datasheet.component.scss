@@ -2,18 +2,22 @@ table {
   position: relative;
   border: 1px solid #ddd;
   border-collapse: collapse;
+  height: 100%;
 }
+
 td, th {
   white-space: nowrap;
   border: 1px solid #ddd;
   text-align: right;
-  height: 17px;
+  height: 26px;
+  padding: 3px 5px;
   font-size: 13px;
 
   input {
     padding: 0px;
     width: 100%;
     height: 100%;
+    font-size: 16px;
     box-sizing:border-box;
     border: none;
     background-color: transparent;
@@ -34,7 +38,6 @@ th {
   background-color: #f0f0f0;
   position: relative;
   top: -1px;
-  z-index: 2;
 
   &:first-of-type {
     left: 0;
@@ -46,18 +49,18 @@ th {
   position: absolute;
   right: 3%;
   display: inline-block;
+  z-index: 3;
 
   .dropdown-menu-box {
     position: relative;
 
     .dropdown-menu-content {
-      z-index: 3;
       position: absolute;
       margin-top: 5px;
 
       td {
-        font-size: 10px;
-        font-weight: 100;
+        font-size: 16px;
+        font-weight: 400;
         padding: 3px;
         background-color: white;
       }
@@ -84,8 +87,10 @@ th {
 }
 
 .index-row {
-  width: 50px;
-  text-align: center;
+  width: 36px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 20px;
   background-color: #f0f0f0;
 
   .index-row-box {
